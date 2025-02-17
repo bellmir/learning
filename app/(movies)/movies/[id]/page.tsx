@@ -2,9 +2,15 @@ import { Suspense } from "react";
 import MovieInfo from "../../../../components/movie-info";
 import MovieVideos from "../../../../components/movie-videos";
 
-export const metadata = {
-  title: "Movie",
-};
+export async function generateMetadata({
+  params: { id },
+}: {
+  params: { id: string };
+}) {
+  return {
+    title: "lalal",
+  };
+}
 
 export default function MovieDetail({
   params: { id },
